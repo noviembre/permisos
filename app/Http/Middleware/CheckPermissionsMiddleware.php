@@ -16,7 +16,9 @@ class CheckPermissionsMiddleware
     public function handle($request, Closure $next)
     {
 
-        dd($request->route()->getAction());
-        return $next($request);
+        #---- if check_user_permissions is false, abort the request and show the forbidden access
+        if ( ! check_user_permissions($request)) {
+            abort(403, "Forbidden access!");
+        }
     }
 }
