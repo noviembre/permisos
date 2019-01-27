@@ -13,8 +13,4 @@ class DashboardController extends Controller
         $this->middleware('check-permissions');
     }
 
-    public function index()
-    {
-        return view('admin.dashboard');
-    }
 }
