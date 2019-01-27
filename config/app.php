@@ -151,6 +151,9 @@ return [
          * Package Service Providers...
          */
 
+        #----- Laravel Collective -----------------------
+        Collective\Html\HtmlServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -208,6 +211,11 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        #----- Laravel Collective Aliases opens ------
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        #----- Laravel Collective Aliases closes -----
 
     ],
 
