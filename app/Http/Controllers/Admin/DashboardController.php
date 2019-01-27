@@ -7,8 +7,9 @@ use App\Http\Controllers\Controller;
 
 class DashboardController extends Controller
 {
-    public function index()
+    public function __construct()
     {
-        return view('admin.dashboard');
+        $this->middleware('auth');
+        $this->middleware('check-permissions');
     }
 }
