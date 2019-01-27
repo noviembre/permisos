@@ -3,8 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
-class Permission extends Model
+use Laratrust\Models\LaratrustPermission;
+class Permission extends LaratrustPermission
 {
     //
 }
