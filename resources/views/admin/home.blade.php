@@ -5,7 +5,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Dashboard
+                @lang('global.app_dashboard')
             </h1>
         </section>
 
@@ -15,7 +15,7 @@
             <!-- Default box -->
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Главная страница</h3>
+                    <h3 class="box-title">aaaaaaaa</h3>
                 </div>
                 <div class="box-body">
                     Текст инструкции по пользованию админкой

@@ -4,7 +4,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="{{ asset('img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
                 <p>Alexander Pierce</p>
@@ -24,46 +24,30 @@
         <!-- /.search form -->
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu">
-            <li class="header">MAIN NAVIGATION</li>
+            <li class="header">@lang('global.user-management.menu')</li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                    <i class="fa fa-dashboard"></i>
+                    <span>@lang('global.app_dashboard')</span>
                 </a>
             </li>
-            <li><a href="#">
+            <li>
+                <a href="#">
                     <i class="fa fa-sticky-note-o"></i>
-                    <span>Post</span></a>
+                    <span>@lang('global.posts.title')</span></a>
             </li>
 
             <li><a href="#">
                     <i class="fa fa-list-ul"></i>
-                    <span>Categories</span></a>
+                    <span>@lang('global.categories.title')</span></a>
             </li>
 
-            <li><a href="#">
-                    <i class="fa fa-tags"></i>
-                    <span>Tags</span></a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="fa fa-commenting"></i>
-                    <span>Cmentaries</span>
-                    <span class="pull-right-container">
-              <small class="label pull-right bg-green">5</small>
-            </span>
-                </a>
-            </li>
 
             <li><a href="#">
                     <i class="fa fa-users"></i>
-                    <span>Users</span></a>
+                    <span>@lang('global.users.title')</span></a>
             </li>
 
-            <li><a href="#">
-                    <i class="fa fa-user-plus"></i>
-                    <span>Subscribers</span></a>
-            </li>
 
         </ul>
     </section>

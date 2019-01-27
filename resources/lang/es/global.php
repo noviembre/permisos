@@ -4,6 +4,7 @@ return [
 
     'user-management' => [
         'title' => 'User Management',
+        'menu' => 'Menu Principal',
         'created_at' => 'Fecha',
         'fields' => [
         ],
@@ -26,9 +27,30 @@ return [
         ],
     ],
 
+    'posts' => [
+        'title' => 'Posts',
+        'title2' => 'Post',
+        'created_at' => 'Fecha',
+        'fields' => [
+            'name' => 'Nombre',
+            'password' => 'Password',
+
+        ],
+    ],
+
+    'categories' => [
+        'title' => 'Categorías',
+        'title2' => 'Categoría',
+        'created_at' => 'Fecha',
+        'fields' => [
+            'name' => 'Nombre',
+            'password' => 'Password',
+
+        ],
+    ],
     'users' => [
         'title' => 'Usuarios',
-        'created_at' => 'Time',
+        'created_at' => 'Fecha',
         'fields' => [
             'name' => 'Nombre',
             'email' => 'Email',
